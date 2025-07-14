@@ -1,0 +1,34 @@
+def resumen_accesos():
+    lineas = [
+        "Accepted password for user1 from 192.168.1.2",
+        "Failed password for root from 192.168.1.3",
+        "Accepted password for admin from 192.168.1.4",
+        "Failed password for invalid user guest from 192.168.1.5"
+    ]
+
+    accesos_ok = 0
+    accesos_fail = 0
+    lineas_ok = []
+    lineas_fail = []
+
+    for linea in lineas:
+        if "Accepted password" in linea:
+            accesos_ok += 1
+            lineas_ok.append(linea)
+        elif "Failed password" in linea:
+            accesos_fail += 1
+            lineas_fail.append(linea)
+
+    print("\nResumen de Accesos:")
+    print(f"Accesos correctos: {accesos_ok}")
+    print(f"Accesos fallidos: {accesos_fail}")
+
+    print("\nAccesos correctos:")
+    for l in lineas_ok:
+        print(l)
+
+    print("\nAccesos fallidos:")
+    for l in lineas_fail:
+        print(l)
+
+resumen_accesos()

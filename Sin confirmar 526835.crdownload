@@ -1,0 +1,20 @@
+# Lista simulada de sitios web y su estado
+sitios = ["google.com", "facebook.com", "sitiofalso123.com"]
+
+def comprobar_sitios(sitios):
+    for sitio in sitios:
+        print(f"\n🌐 Verificando {sitio} ...")
+        
+        # Simulación del estado (puedes cambiarlo)
+        if sitio == "sitiofalso123.com":
+            respuesta = False
+        else:
+            respuesta = True
+
+        if respuesta:
+            print(f"✔️ {sitio} está disponible.")
+        else:
+            print(f"❌ {sitio} no responde.")
+
+# Ejecutar la función
+comprobar_sitios(sitios)

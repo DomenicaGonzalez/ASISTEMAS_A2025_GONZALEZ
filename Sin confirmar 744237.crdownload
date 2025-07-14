@@ -1,0 +1,17 @@
+# Simulación de controles de seguridad
+controles = {
+    "Firewall activado": True,
+    "Antivirus actualizado": False,
+    "Actualizaciones automáticas": True,
+    "Contraseñas seguras": False,
+    "Accesos remotos restringidos": True
+}
+
+# Generar el informe
+print("\n🔍 Informe de Cumplimiento de Políticas de Seguridad:\n")
+
+for control, estado in controles.items():
+    if estado:
+        print(f"✔️ {control}: Cumple")
+    else:
+        print(f"❌ {control}: No cumple")

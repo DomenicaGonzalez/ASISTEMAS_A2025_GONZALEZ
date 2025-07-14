@@ -1,0 +1,21 @@
+def auditar_red():
+    print("\n🌐 Auditando configuración de red...\n")
+
+    # Simulación de datos de red
+    nombre_equipo = "AUDITOR-PC"
+    direccion_ip = "192.168.0.100"
+
+    print(f"💻 Nombre del equipo: {nombre_equipo}")
+    print(f"🔌 Dirección IP local: {direccion_ip}")
+
+    # Simulación de prueba de conectividad
+    conexion_disponible = True  # Cambia a False si quieres simular que no hay conexión
+
+    print("\n🔎 Probando conectividad con google.com ...")
+    if conexion_disponible:
+        print("✔️ Conexión a internet disponible.")
+    else:
+        print("❌ No hay conexión a internet.")
+
+# Ejecutar la función
+auditar_red()
